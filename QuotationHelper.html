@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Quotation Helper v0.005</title>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+
+	<h1>Quotation Helper</h1>
+    
+    <p>What text (if any) would you like at the top of the page?</p>
+    <input type="text" id="tournamentName" style="width: 300px">
+    
+    <p>Select the quotation pool you'd like to use: (to avoid duplicates, use a different pool for each round/class session)</p>
+    <select name="pool" style="width: 200px" id="pool">
+        <option value="englishProverbs">English Language Proverbs</option>
+        <!-- Add new datafile options here, than in the loadQuotations() function in QuotationHelper.js -->
+    </select>
+    <p>How many speakers in the round?</p>
+    <select name="numOfSpeakers" id="numOfSpeakers">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7 selected="selected">7</option>
+    </select>
+    <p>How many quotations for each speaker?</p>
+    <select name="numOfQuotationsEachSlip" id="numOfQuotationsEachSlip">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3 selected="selected">3</option>
+        <option value=4>4</option>
+
+    </select>
+
+    <br>
+    <br>
+    <button type="button" 
+        onclick="loadQuotations(document.getElementById('tournamentName').value, document.getElementById('pool').value)"
+        >Load Quotations</button>
+    <br>
+    <br>
+    <button type="button" onclick="printThis('quotations')" id="printButton" style="display: none">Print out this round!</button>
+    
+    <p id="quotations"></p>
+
+    <br>
+    
+
+    <script src="QuotationHelper.js"></script>
+    <!-- <script src="Proverbs.js"></script> -->
+</body>
+</html>
