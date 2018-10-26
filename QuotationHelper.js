@@ -29,6 +29,9 @@ function loadQuotations(tournamentName, pool) {
     if (pool === "englishProverbs") {  //try to load the proverbs if they are selected, this may become a switch, add new files here
         var datafile = "Proverbs.js";
     }
+    if (pool === "confucius") {  //try to load the proverbs if they are selected, this may become a switch, add new files here
+        var datafile = "Confucius.js";
+    }
     loadScript(datafile, getAndDisplayQuotations);
 }
 
