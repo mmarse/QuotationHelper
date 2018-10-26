@@ -18,7 +18,7 @@ At the moment, the app is designed to be stand-alone and not require internet ac
 
 6) Click on the "Load Quotations" button.
 
-7) Click on the "Print out this round!" button to use your browser's internal print engine to print a slip of quotations.
+7) Click on the "Print out this round!" button to use your browser's internal print engine to print a sheet of quotations.
 
 8) Cut the sheet into separate slips, and you're ready to go.
 
