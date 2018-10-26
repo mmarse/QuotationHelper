@@ -12,7 +12,7 @@ At the moment, the app is designed to be stand-alone and not require internet ac
 
 3) Choose which set of quotations you would like to draw from.
 
-4) Select number of speakers in the round (max is 7, will likely be increaed in the future).
+4) Select number of speakers in the round (max is 7, will likely be increased in the future).
 
 5) Select number of quotations for each speaker to choose from (currently one to four).
 
